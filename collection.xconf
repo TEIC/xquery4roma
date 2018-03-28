@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://exist-db.org/collection-config/1.0">
+  <index xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <create qname="tei:elementSpec" type="xs:string"/>
+    <create qname="tei:classSpec" type="xs:string"/>
+    <create qname="tei:macroSpec" type="xs:string"/>
+    <create qname="tei:elementSpec" type="xs:string"/>
+    <create qname="tei:classSpec" type="xs:string"/>
+    <create qname="tei:macroSpec" type="xs:string"/>
+    <create qname="@ident" type="xs:string"/>
+    <create qname="@module" type="xs:string"/>
+    <fulltext default="none" attributes="false"/>
+  </index>
+</collection>
