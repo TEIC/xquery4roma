@@ -9,5 +9,5 @@
     <type>library</type>
     <target>tei-xquery4roma</target>
     <prepare>pre-install.xql</prepare>
-    <finish/>
+    <finish>post-install.xql</finish>
 </meta>
