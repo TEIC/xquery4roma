@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://expath.org/ns/pkg" name="http://tei-c.org/xquery" abbrev="tei-xquery4roma"
+<package xmlns="http://expath.org/ns/pkg" name="http://tei-c.org/xquery" abbrev="xquery4roma"
     version="0.1" spec="1.0">
     <title>TEI XQuery4Roma</title>
-    <dependency package="http://exist-db.org/apps/shared"/>
 </package>
