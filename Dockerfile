@@ -20,8 +20,10 @@ RUN ant xar
 # Now running the eXist-db
 # and adding our freshly built xar-package
 #########################
-FROM stadlerpeter/existdb
+FROM stadlerpeter/existdb:3.3.0
 
 ENV P5SUBSET_VERSION="current"
+ENV EXIST_DEFAULT_APP_PATH="xmldb:exist:///db/apps/xquery4roma"
+ENV EXIST_CONTEXT_PATH="/Query"
 
 COPY --from=builder /opt/tei-roma-sidekick-build/build/*.xar ${EXIST_HOME}/autodeploy/
