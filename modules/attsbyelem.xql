@@ -55,6 +55,6 @@ for $a in $c//tei:attDef
 return tei:atts($a,$lang) 
 }
 {
-tei:classatts(/tei:TEI,$c,$lang)
+tei:classatts($config:p5subset/tei:TEI,$c,$lang)
 }
 </Element>
