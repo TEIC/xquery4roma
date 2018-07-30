@@ -20,7 +20,7 @@ RUN ant xar
 # Now running the eXist-db
 # and adding our freshly built xar-package
 #########################
-FROM stadlerpeter/existdb:3.3.0
+FROM stadlerpeter/existdb
 
 ENV P5SUBSET_VERSION="current"
 ENV EXIST_DEFAULT_APP_PATH="xmldb:exist:///db/apps/xquery4roma"
