@@ -22,7 +22,7 @@ RUN ant xar
 #########################
 FROM stadlerpeter/existdb
 
-ENV P5SUBSET_VERSION="current"
+ENV P5SUBSET_URL="http://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml'"
 ENV EXIST_DEFAULT_APP_PATH="xmldb:exist:///db/apps/xquery4roma"
 ENV EXIST_CONTEXT_PATH="/Query"
 

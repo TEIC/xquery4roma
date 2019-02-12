@@ -11,10 +11,12 @@ declare variable $dir external;
 (: the target collection into which the app is deployed :)
 declare variable $target external;
 
-let $p5subset.version := environment-variable('P5SUBSET_VERSION')
-let $p5subset.url := concat('http://www.tei-c.org/Vault/P5/', $p5subset.version, '/xml/tei/odd/p5subset.xml')
-let $p5subset := doc($p5subset.url)
+let $p5subset.url.env := environment-variable('P5SUBSET_URL')
+let $p5subset.url := 
+    if($p5subset.url.env castable as xs:anyURI)
+    then $p5subset.url.env
+    else 'http://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml'
 
 return
-    try{ xdb:store(xdb:create-collection($target, 'data'),'p5subset.xml',$p5subset) }
+    try{ xdb:store(xdb:create-collection($target, 'data'),'p5subset.xml',doc($p5subset.url)) }
     catch * {'failed to retrieve/store the p5subset.xml'}
