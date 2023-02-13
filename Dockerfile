@@ -10,7 +10,7 @@ ENV BUILD_HOME="/opt/tei-roma-sidekick-build"
 WORKDIR ${BUILD_HOME}
 
 RUN apt-get update \
-    && apt-get install -y --force-yes ant
+    && apt-get install -y --no-install-recommends ant
 
 COPY . .
 
