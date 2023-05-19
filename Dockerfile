@@ -3,7 +3,7 @@
 # 1. set up the build environment and build the expath-package
 # 2. run the eXist-db
 #########################
-FROM openjdk:8-jdk as builder
+FROM eclipse-temurin:17-jdk as builder
 LABEL maintainer="Peter Stadler for the TEI Council"
 
 ENV BUILD_HOME="/opt/tei-roma-sidekick-build"
