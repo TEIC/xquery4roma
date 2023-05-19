@@ -1,6 +1,6 @@
 # TEI XQuery4Roma
 
-A [eXist database](https://exist-db.org/) backend for use with the (old) [TEI Roma webservice](https://roma.tei-c.org).
+A [eXist database](https://exist-db.org/) backend for use with the (old) [TEI Roma webservice](https://github.com/TEIC/Roma).
 
 ## How to use
 
